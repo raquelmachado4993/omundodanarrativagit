@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo o mundo da narrativa</title>
+    <!-- esse treixo de codigo é necessario em todo o sistema pois o jogo funciona com javascript -->
+    <noscript><META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+      <script src="//code.jquery.com/jquery-3.1.1.js"></script>
+      <script src="./js-jogo/jquery.rwdImageMaps.js"></script>
+      <script src="./js-jogo/jquery.rwdImageMaps.min.js"></script>
+      <script src="./js/essencial.js" type="text/javascript"></script>
+  <!-- fim do treixo de codigo obrigatorio em todo o site -->  
+ 
+
+  <script  src="./js-jogo/index.js"></script>
+  <script src="./js-jogo/function.js" type="text/javascript"></script>
+  <script src="./js-jogo/animacoes1.js" type="text/javascript"></script>
+  
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">   -->
+     <link rel="stylesheet" href="css-jogo/style2.css" >
+</head>
+
+
+<body>
+
+
+    <div id="div_raquel">
+    <img id="imagemfundo"  class="myImg" src="./fundos/fim.png" usemap="#image-map"> 
+    <map name="image-map"> 
+
+            
+        <area target="" alt="sair" title="sair"  href="#" coords="102,624,95" onclick='limpar();sessionStorage.clear();location.href="index.html";'  shape="circle">
+        <area target="" alt="reiniciar" title="Reiniciar" href="./inicio.html" coords="856,616,88" onclick=""  shape="circle">
+
+       
+    </div>
+    <div class="modal-content">
+    <div id="modaltexto" class="modal">
+         
+        <!-- <h1>eu aqui </h1> -->
+        </div>
+        </div>
+
+        <object height="50px" width="100px" data="./sounds/bensound-littleidea.mp3" autostart="true"  loop="3"  volume="80" width="180" height="40" />
+
+</body>
+</html>
+

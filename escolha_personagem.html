@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo o mundo da narrativa</title>
+    <!-- esse treixo de codigo é necessario em todo o sistema pois o jogo funciona com javascript -->
+    <noscript><META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+      <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+      <script src="./js-jogo/jquery.rwdImageMaps.js"></script>
+      <script src="./js-jogo/jquery.rwdImageMaps.min.js"></script>
+
+      <script src="./js/essencial.js" type="text/javascript"></script>
+  <!-- fim do treixo de codigo obrigatorio em todo o site -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">  
+     <link rel="stylesheet" href="./css-jogo/style.css" >
+     
+  
+</head>
+
+<body>
+   
+   
+    <div id="div_raquel">
+      
+       <!-- <img id="imagemfundo"  class="myImg" src="natnoquartodopedrinho.png" usemap="#image-map"> -->
+        <img id="imagemfundo"  class="myImg" src="./fundos/imagemappersonagens2.png" usemap="#image-map">
+        <map name="image-map">
+
+            <!-- Primeira fileira -->
+
+            <area target="" alt="samurai" class="js-open-modal" title="samurai" href="#" coords="799,162,732,80" onclick="funcaosamurai();"  shape="rect">
+            <area target="" alt="zumbi" class="js-open-modal" title="zumbi" href="#" coords="616,86,671,159"  onclick="funcaozumbi();" shape="rect">
+            <area target="" alt="farao"  class="js-open-modal"title="farao" href="#"coords="499,82,566,168" onclick="funcaofarao();" shape="rect">
+            <area target="" alt="frutas"  class="js-open-modal"title="frutas" href="#" coords="364,81,453,158" onclick="funcaofrutas();" shape="rect">
+            <area target="" alt="mostro" class="js-open-modal" title="monstro" href="#" coords="257,85,320,170" onclick="funcaomonstro();"  shape="rect">
+            <area target="" alt="et"  class="js-open-modal" title="et" href="#" coords="145,91,196,171" onclick="funcaoet();"  onclick="funcaoet();"  shape="rect">
+            <area target="" alt="bruxa"  class="js-open-modal"title="bruxa" href="#" coords="23,98,94,165" onclick="funcaobruxa();" shape="rect">
+             <!-- <area target="" alt="" class="js-open-modal" title="" href="#"onclick="funcaoelfo();" coords="923,160,853,85" shape="rect"> -->
+            <area target="" alt="elfa"  class="js-open-modal" title="elfa" href="#" coords="848,82,907,157" onclick="funcaoelfo();" shape="rect">
+
+                <!-- Segunda fileira -->
+
+          <area target="" alt="legumes" title="legumes" class="js-open-modal" href="#" coords="26,272,92,347" onclick="funcaolegumes();"   shape="rect">
+          <area target="" alt="mumia" title="mumia" class="js-open-modal" href="#" coords="143,269,212,351" onclick="funcaomumia();"   shape="rect">
+          <area target="" alt="pirata" title="pirata" class="js-open-modal" href="#" coords="252,270,327,346" onclick="funcaopirata();"   shape="rect">
+          <area target="" alt="vampiro" title="vampiro" class="js-open-modal" href="#" coords="374,263,440,344" onclick="funcaovampiro();"   shape="rect">
+          <area target="" alt="fada" title="fada" class="js-open-modal" href="#" coords="488,264,573,336" onclick="funcaofada();"   shape="rect">
+          <area target="" alt="ogro" title="ogro" class="js-open-modal" href="#" coords="607,271,687,342" onclick="funcaoogro();"   shape="rect">
+          <area target="" alt="sereia" title="sereia" class="js-open-modal" href="#" coords="727,262,797,342" onclick="funcaosereia();"   shape="rect">
+          <area target="" alt="lobo" title="lobisomem" class="js-open-modal" href="#" coords="854,262,917,334" onclick="funcaolobisomem();"   shape="rect">
+          
+        <!-- terceira fileira -->
+
+        <area target="" alt="astronauta" title="astronauta" class="js-open-modal" href="#" coords="18,438,81,531" onclick="funcaoastronauta();"   shape="rect">
+          <area target="" alt="rei" title="rei" class="js-open-modal" href="#" coords="144,453,209,525" onclick="funcaorei();"   shape="rect">
+          <area target="" alt="rainha" title="princesa" class="js-open-modal" href="#" coords="262,449,327,528" onclick="funcaoprincesa();"   shape="rect">
+          <area target="" alt="barbaro" title="barbaro" class="js-open-modal" href="#" coords="374,446,440,524" onclick="funcaobarbaro();"   shape="rect">
+          <area target="" alt="mago" title="mago" class="js-open-modal" href="#" coords="493,448,569,528" onclick="funcaomago();"   shape="rect">
+          <area target="" alt="transformer" title="transformer" class="js-open-modal" href="#" coords="610,447,681,518" onclick="funcaotransformer();"   shape="rect">
+          <area target="" alt="populacao" title="sereshumanos" class="js-open-modal" href="#" coords="726,441,806,517" onclick="funcaohumanos();"   shape="rect">
+          <area target="" alt="cientistas" title="cientistas" class="js-open-modal" href="#" coords="841,434,924,511" onclick="funcaocientistas();"   shape="rect">
+
+        <!-- quarta fileira -->    
+
+        <area target="" alt="fantasmas" title="fantasmas" class="js-open-modal" href="#" coords="28,615,96,692" onclick="funcaofantasma();"   shape="rect">
+          <area target="" alt="robo" title="robo" class="js-open-modal" href="#" coords="139,615,200,698" onclick="funcaorobo();"   shape="rect">
+          <area target="" alt="heroi" title="heroi" class="js-open-modal" href="#" coords="253,613,321,690" onclick="funcaoheroi();"   shape="rect">
+          <area target="" alt="arvores" title="arvores" class="js-open-modal" href="#" coords="365,618,440,691" onclick="funcaoarvores();"   shape="rect">
+          <area target="" alt="dino" title="Dinossauro" class="js-open-modal" href="#" coords="489,616,563,692" onclick="funcaodinossauro();"   shape="rect">
+          <area target="" alt="bozo" title="Soldado" class="js-open-modal" href="#" coords="599,614,681,696" onclick="funcaosoldado();"   shape="rect">
+          <area target="" alt="animais" title="animais" class="js-open-modal" href="#" coords="718,609,798,694" onclick="funcaoanimais();"   shape="rect">
+          <area target="" alt="outros" title="Quero criar meu próprio personagem" class="js-open-modal" href="#" coords="845,618,913,695" onclick="funcaooutro();"   shape="rect">
+  
+          </map>
+
+  <!-- <a href="#" class="js-open-modal">open modal</a> -->
+
+<div id="nat" class="modal">
+</div>
+
+
+  <script  src="./js-jogo/index.js"></script>
+  <script src="./js-jogo/function.js" type="text/javascript"></script>
+
+
+
+</body>
+
+<div id="botoespersonagem"  style="display:flex;justify-content:center;align-items:center;"> 
+  
+<input type="image" src="./botoes/botaovoltar2.png" width=”5px” height=”5px” onclick='trocacena("./fundos/natnoquartodopedrinho.png")'/>
+<input type="image" src="./botoes/botaoavancar2.png" width=”5px” height=”5px” onclick='trocacena("./fundos/imagemap-personagens.png")'/>
+
+  
+  <!-- <button type="button"  src="./botoes/botaovoltar.png" onclick='trocacena("./fundos/natnoquartodopedrinho.png");'>anterior</button>   
+ <button type="button" onclick='trocacena("./fundos/imagemap-personagens.png");'>proximo</button>  -->
+
+ 
+</div>
+<object height="50px" width="100px" data="./sounds/bensound-smile.mp3" autostart="true"  loop="3"  volume="50" width="180" height="40" />
+</html>
+

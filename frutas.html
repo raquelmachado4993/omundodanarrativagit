@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+        <head>
+                <meta charset="UTF-8">
+                <title>Jogo o mundo da narrativa</title>
+                  <!-- esse treixo de codigo é necessario em todo o sistema pois o jogo funciona com javascript -->
+                  <noscript><META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+                    <script src="//code.jquery.com/jquery-3.1.1.js"></script>
+                    <script src="./js-jogo/jquery.rwdImageMaps.js"></script>
+                    <script src="./js-jogo/jquery.rwdImageMaps.min.js"></script>
+
+                    <script src="./js/essencial.js" type="text/javascript"></script>
+                <!-- fim do treixo de codigo obrigatorio em todo o site -->  
+
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">  
+                   <link rel="stylesheet" href="css-jogo/style2.css" >
+              
+                
+              </head>
+
+
+
+        
+<body> 
+
+<div id= "div_raquel">
+    <!-- height="720px" width="960px" -->
+    <img id="imagemfundo"  class="myImg" src="./fundos/cesta-colherfrutas.png" usemap="#image-map" >
+     
+    <map name="image-map"> 
+            
+           
+        <area target="" id="colher frutas" alt="Colher frutas"  title="Colher frutas" href="frutas2.html" onclick="salvaprogresso('colheu as frutas','progresso');" coords="666,537,123,641" shape="rect">
+                        
+    </map>
+
+    <object height="50px" width="100px" data="./sounds/bensound-sunny.mp3" autostart="true"  loop="3"  volume="80" width="180" height="40" />
+
+</div>
+        
+
+
+
+
+
+     <div id="nat" class="modal">
+       
+    </div>
+
+  <script  src="./js-jogo/index.js"></script>
+  <script src="./js-jogo/animacoes1.js" type="text/javascript"></script>
+
+    </body>
+        
+     </html>

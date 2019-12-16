@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Painel de controle</title>
+  <noscript><META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="css/analise-css.css">
+
+  
+</head>
+
+<body>
+
+  <div class="tabs">
+  <input id="tab-1" name="tabset-1" type="radio" hidden />
+  <input id="tab-2" name="tabset-1" type="radio" hidden />
+  <input id="tab-3" name="tabset-1" type="radio" hidden  />
+  <input id="tab-4" name="tabset-1" type="radio" hidden />
+  <input id="tab-5" name="tabset-1" type="radio" hidden checked/>
+  <nav class="tabs-nav" role="navigation">
+    <input id="tabsnav-1" type="checkbox" hidden />
+    <label for="tabsnav-1">☰</label>
+    <ul>
+      <li><label for="tab-1">Dados Gerais</label></li>
+      <li><label for="tab-2">Dados para análise do eixo paradigmático</label></li>
+      <li><label for="tab-3">Dados para análise do eixo sintagmático</label></li>
+      <li><label for="tab-4">Dados para análise da criatividade</label></li>
+      <li><label for="tab-5">Cadastro de informações</label></li>
+   	  </ul>
+  </nav>
+  <div class="tab">
+    <h2 color="red"> <b><u> Análise temporal </b> </u></h2>
+    <p>Tempo total de execução do jogo: </p>
+    
+    <h2 color="red"> <b><u> Tempo de elaboração </b> </u></h2>
+    <p>Tempo para elaboração do personagem: </p>
+	<p>Tempo para elaboração do cenário: </p>
+<p>Tempo para elaboração do objeto: </p>
+<p>Tempo para elaboração do transporte: </p>
+<p>Tempo para elaboração da missão: </p>
+<p>Tempo para elaboração da narrativa: </p>
+
+<h2 color="red"> <b><u> Tempo de seleção </b> </u></h2>
+<p>Tempo para seleção do elemento narrativo na primeira escolha: </p>
+<p>Tempo para seleção do elemento narrativo na segunda escolha: </p>
+<p>Tempo para seleção do elemento narrativo na terceira escolha: </p>
+<p>Tempo para seleção do elemento narrativo na quarta escolha: </p>
+<p>Tempo para seleção do elemento narrativo na quinta escolha: </p>
+
+ <h2> <b> <u> Lista de Inputs </b> </u> </h2>
+
+
+
+
+ <h2> <b> <u> Narrativa </b> </u> </h2>
+
+ <h2> <b> <u> Rascunhos </b> </u> </h2>
+
+  </div>
+
+
+
+
+
+  <div class="tab">
+    <h2>Análise I</h2>
+    <p> Para esta análise, considere o seguinte caminho percorrido pela criança:</p>
+<br>
+<br>
+	<h2>Análise II</h2>
+	<p> Para esta análise, observe o resultado do processo de mineração textual:</p>
+
+<br>
+<br>
+<h2>Análise III</h2>
+<p> Para esta análise, observe a escolha sobre o final da história: </p>
+<br>
+<br>
+<h2>Análise IV</h2>
+<p> Para esta análise, observe a escolha sobre PERGUNTAR ou PESQUISAR: </p>
+</div>
+
+
+
+  <div class="tab">
+    <h2>Dados para análise do eixo sintagmático</h2>
+   
+    <hr />
+    <h3>Índices semânticos</h3>
+  
+    <h4>Nuvem de palavras</h4>
+    <h4>Clusterização</h4>
+
+    <h3>Índices Lexicais </h3>
+    <h3>Índices Sintáticos </h3>
+    <h3>Índices Morfológicos </h3>
+  </div>
+
+  <div class="tab">
+    <h2>Dados para análise da criatividade</h2>
+    <h3> Fluência ideacional: </h3>
+    <h3> Originalidade: </h3>
+    <h3> Flexibilidade: </h3>
+    <h3> Flexibilidade espontânea semântica: </h3>
+    <h3> Redefinição semântica: </h3>
+    <h3> Redefinição figural: </h3>
+    <h3> Teste da vaca saltadora: </h3>
+  </div>
+  <div class="tab">
+      <a style="color: rgb(187, 230, 255)" href="https://docs.google.com/forms/d/e/1FAIpQLSf7KbAVZWvuBHe1yyTGpa0CW6V6gYKfJwdHJ5CBvSM34znMnQ/viewform?usp=sf_link" target="_blank">link do formulario de avaliação</a><br><br>
+      <a style="color: rgb(187, 230, 255)"  href="./MANUAL-DO-PROFESSOR-OMUNDODANARRATIVA.pdf" target="_blank">Manual de utilização</a><br><br>
+      <input type="submit" name="enviar" align="right" value="Cadastrar escola"onclick="cadescola();" >
+      <input type="submit" name="enviar" align="right" value="Cadastrar turma" onclick="cadturma();" >
+      <input type="submit" name="enviar" align="right" value="Mudanca do jogo" onclick="mudancaModo();" >
+      <input type="submit" name="enviar" align="right" value="Jogar" onClick="window.location.href='./inicio.html';"/>
+   <div id="divaparece"></div>
+    </div>
+
+
+
+</div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/zepto/1.0/zepto.min.js'></script>
+
+  
+
+    <script  src="js/js-analise.js"></script>
+
+
+
+
+</body>
+
+</html>

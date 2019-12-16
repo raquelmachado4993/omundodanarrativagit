@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+        <head>
+                <meta charset="UTF-8">
+                <title>Jogo o mundo da narrativa</title>
+                  <!-- esse treixo de codigo é necessario em todo o sistema pois o jogo funciona com javascript -->
+                  <noscript><META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+                    <script src="//code.jquery.com/jquery-3.1.1.js"></script>
+                    <script src="./js-jogo/jquery.rwdImageMaps.js"></script>
+                    <script src="./js-jogo/jquery.rwdImageMaps.min.js"></script>
+
+                    <script src="./js/essencial.js" type="text/javascript"></script>
+
+                  
+                <!-- fim do treixo de codigo obrigatorio em todo o site -->  
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">  
+                   <link rel="stylesheet" href="css-jogo/style2.css" >
+              
+                
+              </head>
+
+
+
+        
+<body> 
+  
+<div id="div_raquel">
+    
+    <img id="imagemfundo"  class="myImg" src="./fundos/bgfase1.png" usemap="#image-map">
+     
+          <map name="image-map"> 
+
+            
+            <area target="" alt="sol" class="js-open-modal" title="sol" href="#" coords="346,142,297,101" onclick="funcaosol();"  shape="rect">
+            <area target="" alt="nuvem" class="js-open-modal" title="nuvem" href="#" coords="206,91,70,43" onclick="funcaonuvem();"  shape="rect">
+            <area target="" alt="nuvem" class="js-open-modal" title="nuvem" href="#" coords="764,144,630,61" onclick="funcaonuvem();"  shape="rect">
+            <area target="" alt="nuvem" class="js-open-modal" title="nuvem" href="#" coords="866,41,919,81" onclick="funcaonuvem();"  shape="rect">
+            <area target="" alt="arvore" class="js-open-modal" title="arvore" href="#" coords="150,309,69,186" onclick="funcaoarvore();"  shape="rect">
+            <area target="" alt="girassol" class="js-open-modal" title="girassol" href="#" coords="19,615,101,702" onclick="funcaogirassol();"  shape="rect">
+            <area target="" alt="girassol" class="js-open-modal" title="girassol" href="#" coords="31,419,84,530" onclick="funcaogirassol();"  shape="rect">
+            <area target="" alt="girassol" class="js-open-modal" title="girassol" href="#" coords="3,513,44,592" onclick="funcaogirassol();"  shape="rect">
+            <area target="" alt="girassol" class="js-open-modal" title="girassol" href="#" coords="67,375,105,427" onclick="funcaogirassol();"  shape="rect">
+            <area target="" alt="girassol" class="js-open-modal" title="girassol" href="#" coords="135,372,179,466" onclick="funcaogirassol();"  shape="rect">
+            <area target="" alt="girassol" class="js-open-modal" title="girassol" href="#" coords="193,397,231,454" onclick="funcaogirassol();"  shape="rect">
+            <area target="" alt="girassol" class="js-open-modal" title="girassol" href="#" coords="865,617,933,692" onclick="funcaogirassol();"  shape="rect">
+            <area target="" alt="girassol" class="js-open-modal" title="girassol" href="#" coords="891,461,959,596" onclick="funcaogirassol();"  shape="rect">
+            <area target="" alt="girassol" class="js-open-modal" title="girassol" href="#" coords="768,351,855,461" onclick="funcaogirassol();"  shape="rect">
+            <area target="" alt="girassol" class="js-open-modal" title="girassol" href="#" coords="871,409,900,477" onclick="funcaogirassol();"  shape="rect">
+
+
+            <area target="" alt="laranjeira" class="js-open-modal" title="laranjeira" href="#" coords="419,248,80" onclick="funcaolaranjeira();"  shape="circle">
+            <area target="" alt="macieira" class="js-open-modal" title="macieira" href="#" coords="882,209,82" onclick="funcaomacieira();"  shape="circle">
+            <area target="" alt="cerca" class="js-open-modal" title="cerca" href="#" coords="240,356,535,390" onclick="funcaocerca();"  shape="rect">
+            <area target="" alt="tora" class="js-open-modal" title="tora" href="#" coords="171,241,348,333" onclick="funcaotorademadeira();"  shape="rect">
+       
+            <area target="" alt="pedra" class="js-open-modal" title="pedra" href="#" coords="180,478,205,489" onclick="funcaopedra();"  shape="rect">
+            <area target="" alt="pedra" class="js-open-modal" title="pedra" href="#" coords="290,491,307,501" onclick="funcaopedra();"  shape="rect">
+            <area target="" alt="pedra" class="js-open-modal" title="pedra" href="#" coords="125,515,145,529" onclick="funcaopedra();"  shape="rect">
+            <area target="" alt="pedra" class="js-open-modal" title="pedra" href="#" coords="116,596,146,617" onclick="funcaopedra();"  shape="rect">
+            <area target="" alt="pedra" class="js-open-modal" title="pedra" href="#" coords="817,682,854,699" onclick="funcaopedra();"  shape="rect">
+            <area target="" alt="pedra" class="js-open-modal" title="pedra" href="#" coords="764,606,783,619" onclick="funcaopedra();"  shape="rect">
+            <area target="" alt="pedra" class="js-open-modal" title="pedra" href="#" coords="821,518,844,528" onclick="funcaopedra();"  shape="rect">
+            <area target="" alt="pedra" class="js-open-modal" title="pedra" href="#" coords="784,459,815,470" onclick="funcaopedra();"  shape="rect">
+
+            <area target="" alt="janela" class="js-open-modal" title="janela" href="#" coords="517,243,537,251" onclick="funcaojanela();"  shape="rect">
+            <area target="" alt="janela" class="js-open-modal" title="janela" href="#" coords="620,217,636,246" onclick="funcaojanela();"  shape="rect">
+            <area target="" alt="janela" class="js-open-modal" title="janela" href="#" coords="670,196,719,248" onclick="funcaojanela();"  shape="rect">
+
+           <area target="" alt="porta" class="js-open-modal" title="porta" href="#" coords="562,332,607,375" onclick="funcaoporta(); "  shape="rect">
+        </map>
+
+       
+
+     <div id="nat" class="modal">
+       
+    </div>
+  <script  src="./js-jogo/index.js"></script>
+  <script src="./js-jogo/animacoes1.js" type="text/javascript"></script>
+
+
+    </body>
+        
+    <object height="50px" width="100px" data="./sounds/bensound-sunny.mp3" autostart="true"  loop="3"  volume="80" width="180" height="40" />
+    
+     </html>

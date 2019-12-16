@@ -1,0 +1,233 @@
+/* IMPORTS */
+
+/* importando a fonte  */
+
+@font-face {
+    font-family: HelvetiHand;
+    src: url('./fonts/HelvetiHand.ttf');
+ }
+ 
+ p {
+   font-family: HelvetiHand;
+ }
+ 
+ /* IMPORT PARA PAPEL DE RASCUNHO - nao estou usando agora  */
+ 
+ @import url(https://fonts.googleapis.com/css?family=Roboto);
+ @import url(https://fonts.googleapis.com/css?family=Handlee);
+ 
+ 
+ 
+ 
+ 
+ 
+ /* CSS para descriçao do personagem - personalizando text area  */
+ 
+ /* remove barra de rolagem  */
+ textarea {
+ overflow:auto;
+ }
+ 
+ /* desabilita resize do text area */
+ textarea {
+ resize:none;
+ 
+ }
+ 
+ textarea{  
+ /* box-sizing: padding-box; */
+ overflow:hidden;
+ /* demo only: */
+ padding:10px;
+ width:250px;
+ font-size:14px;
+ margin: 10px auto;
+ display:block;
+ border-radius:10px;
+ border:2px solid #000000;
+ }
+ 
+ .perguntasbasicas { 
+   font-size:32px;
+   position: fixed;
+   height: 100%;
+   font-family: HelvetiHand;
+   float:left;
+   position: fixed;
+   height: 100%;
+   left: 80%;
+   font-family: HelvetiHand;
+   /* background-color: rgba(10,23,55,2); */
+   background-size: cover;
+   margin-top:80px;
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ /* CSS que eu usei pra criar a pagina  */
+ 
+ body {
+ 
+ background-image: url("./fundos/fundo_jogo2.jpg");
+ background-position: 50% 0%;
+ background-repeat: no-repeat;
+ position: fixed;
+ top: 0; left: 0; bottom: 0; right: 0;
+ margin: auto;
+ width: 90%;
+ height:90%;
+ width: 960;
+ vertical-align: middle;
+ height: 720px;
+ font-family: HelvetiHand;
+ 
+ }
+ 
+ /* CSS PARA PAPEL - nao estou usando agora */
+ 
+ 
+ /* .paper { */
+   /* position: relative; */
+   /* width: 90%; */
+   /* max-width: 800px; */
+   /* min-width: 400px; */
+   /* height: 390px; */
+   /* margin: 0 auto; */
+   /* background: #fafafa; */
+   /* border-radius: 10px; */
+   /* box-shadow: 0 2px 8px rgba(0,0,0,.3); */
+   /* overflow: hidden; */
+ /* } */
+ /* .paper:before { */
+   /* content: ''; */
+   /* position: absolute; */
+   /* top: 0; bottom: 0; left: 0; */
+   /* width: 60px; */
+   /* background: radial-gradient(#575450 6px, transparent 7px) repeat-y; */
+   /* background-size: 30px 30px; */
+   /* border-right: 3px solid #D44147; */
+   /* box-sizing: border-box; */
+ /* } */
+ 
+ /* .paper-content { */
+   /* position: absolute; */
+   /* top: 30px; right: 0; bottom: 30px; left: 60px; */
+   /* background: linear-gradient(transparent, transparent 28px, #91D1D3 28px); */
+   /* background-size: 30px 30px; */
+ /* } */
+ 
+ /* .paper-content textarea { */
+   /* width: 100%; */
+   /* max-width: 100%; */
+   /* height: 100%; */
+   /* max-height: 100%; */
+   /* line-height: 30px; */
+   /* padding: 0 10px; */
+   /* border: 0; */
+   /* outline: 0; */
+   /* background: transparent; */
+   /* color: mediumblue; */
+   /* font-family: 'Handlee', cursive; */
+   /* font-weight: bold; */
+   /* font-size: 18px; */
+   /* box-sizing: border-box; */
+   /* z-index: 1; */
+ /* } */
+ 
+ /* fim do CSS para papel */
+ 
+ #transporte {
+ float:left;
+ width: 26%;
+ top: 0;
+ left: 190px;
+ bottom: 0;
+ font-size:32px;
+ position: fixed;
+ height: 100%;
+ z-index: 555px;
+ font-family: HelvetiHand;
+ /* background-color: rgba(10,23,55,0.5); */
+ background-size: cover;
+ 
+ } 
+ 
+ textarea {
+ margin-top:0px;
+ height: 50px;
+ padding: 5px;
+ resize: none;
+ width: 300px;
+ position:relative;
+ vertical-align: top;
+ } 
+ 
+ 
+ #cadastro {
+ float:right;
+ width: 50%;
+ vertical-align: top;
+ left: 600px;
+ font-size:32px;
+ position: fixed;
+ height: 100%;
+ font-family: HelvetiHand;
+ /* background-color: rgba(10,23,55,2); */
+ background-size: cover;
+ margin-top:60px;
+ }
+ 
+ #formulario{
+ margin-top:0px;
+ left:660;
+ font-size:18px;
+ position: fixed;
+ vertical-align: top;
+ 
+ }
+ 
+ 
+ 
+ #areadetexto {
+ font-size:14px;
+ text-align: center;
+ margin-top:-2%;
+ left: 80%;
+ }
+ 
+ 
+ #imagemtransporte {
+ float:center;
+ width: 500px;
+ height: 300px;
+ top: 25%;
+ left: 18%;
+ bottom:50%;
+ position: fixed;
+ z-index: 555px;
+ font-family: HelvetiHand;
+ background-color: rgba(10,23,55,2);
+ opacity:0.2;
+ background-size: cover;
+ }
+ 
+ #botaodeimagem {
+ bottom:5%;
+ left: 17%;
+ position: fixed;
+ }
+ 
+ #divparabotoes {
+   bottom: -5px;
+   position:fixed;
+   left: 880px;
+   vertical-align: top;
+ }

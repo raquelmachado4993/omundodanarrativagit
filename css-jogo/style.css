@@ -1,0 +1,109 @@
+body {
+  background: rgb(0, 0, 0);
+  padding: 20px;
+}
+
+img {
+	margin: auto;
+  position: absolute;
+  align-self: center;
+  top: 0; left: 0; bottom: 0; right: 0;
+
+  width: 90%;
+  height:90%;
+  }
+  .myImg {
+    width: 960px;
+    height:720px;
+  }
+
+  .Imgpersonagem {
+    width: 90%;
+    height:90%;
+  }
+
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  /* opacity: 0.2; */
+  width: 300px;
+  height: 200px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(145, 14, 14, 0.2);
+}
+
+
+
+.modal.zezinho {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  /* opacity: 0.2; */
+  width: 500px;
+  height: 200px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 0 0 20px rgba(145, 14, 14, 0.2);
+}
+
+
+.modal.visible {
+  display: block;
+}
+
+.modal__header {
+  color: white;
+  background: #333;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  height: 50px;
+  box-sizing: border-box;
+}
+.modal__header a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  padding: 0 20px;
+  font-size: 16px;
+  background: #555;
+  height: 100%;
+}
+
+#botoes {
+  position:absolute;
+  bottom:0;
+  width:100%;
+  margin:0;
+  margin-top:200px;
+  align:'center';
+  clear: both;
+  }
+  
+
+  #botoespersonagem {
+    position:absolute;
+    bottom:-8%;
+    width:100%;
+    margin:0;
+    margin-top:200%;
+    align:'center';
+    clear: both;
+    }

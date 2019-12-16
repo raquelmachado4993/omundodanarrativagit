@@ -1,0 +1,24 @@
+## https://askubuntu.com/questions/780502/ubuntu-16-pip-install-installs-to-python-3-instead-of-2
+## https://stevenloria.com/simple-text-classification/
+
+apt install python3
+apt install python3-pip 
+apt install python-dev libmysqlclient-dev
+python3 -m pip install -U --force-reinstall pip
+pip3 install mysql-connector-python
+pip3 install mysqlclient
+pip3 install pymysql
+pip3 install matplotlib
+pip3 install numpy
+pip3 install re
+pip3 install nltk
+pip3 install mysqlclient
+pip3 install wordcloud
+pip3 install matplotlib
+pip3 install -U textblob nltk
+pip3 install datetime
+pip3 install networkx
+pip3 install  textblob
+python3 -m textblob.download_corpora
+pip3 install naiveBayesClassifier
+pip3 install classifier1 

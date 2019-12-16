@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+<head>
+  <meta charset="UTF-8">
+  <title>Jogo o mundo da narrativa</title>
+    <!-- esse treixo de codigo é necessario em todo o sistema pois o jogo funciona com javascript -->
+    <noscript><META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+      <script src="http://code.jquery.com/jquery-3.1.1.js"></script>
+      <script src="./js-jogo/jquery.rwdImageMaps.js"></script>
+      <script src="./js-jogo/jquery.rwdImageMaps.min.js"></script>
+      <script src="./js/essencial.js" type="text/javascript"></script>
+  <!-- fim do treixo de codigo obrigatorio em todo o site -->  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">  
+     <link rel="stylesheet" href="./css-jogo/style2.css" >
+
+  
+</head>
+
+<body>
+
+    <div id="div_raquel">
+       <!-- <img id="imagemfundo"  class="myImg" src="natnoquartodopedrinho.png" usemap="#image-map"> -->
+        <img id="imagemfundo"  class="myImg" src="./fundos/plantacarnivorasempoco.png" usemap="#image-map">
+        <map name="image-map">
+
+            <!-- Parte de baixo -->
+
+            <area target=""  class="js-open-modal" title="2pts" href="#" coords="86,149,113,184" onclick="funcaomoinho();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="551,652,693,718" onclick="funcaovaca1();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="698,630,869,719" onclick="funcaovaca2();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="872,666,920,718" onclick="funcaococofeliz();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="19,659,112,717" onclick="funcaoregador1();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="116,623,187,718" onclick="arvore1();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="190,646,233,719" onclick="arvore2();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="233,601,320,716" onclick="arvore3();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="317,612,390,719" onclick="arvore4();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="392,636,432,716" onclick="arvore5();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="430,608,506,717" onclick="arvore6();"  shape="rect">
+                     
+             <!-- Área das couves -->
+
+             <area target=""  class="js-open-modal" title="x" href="#" coords="6,502,44,567" onclick="balde();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="53,494,80,514" onclick="floramarela1();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="48,525,81,548" onclick="floramarela2();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="49,560,84,583" onclick="floramarela3();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="88,478,149,527" onclick="couve1();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="154,476,207,529"  onclick="couve2();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="211,474,270,527"   onclick="couve3();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="271,479,330,523"    onclick="couve4();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="335,476,399,526"    onclick="couve5();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="401,477,462,526"    onclick="couve6();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="466,475,531,526"     onclick="couve7();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="536,474,597,526"    onclick="couve8();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="600,476,662,528"   onclick="couve9();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="666,475,732,527"    onclick="couve10();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="735,477,797,526"     onclick="couve11();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="844,478,889,525"    onclick="couve12();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="892,475,957,525"    onclick="couve13();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="92,530,149,581"   onclick="couve14();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="154,531,208,581"   onclick="couve15();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="216,533,267,571"    onclick="couve16();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="273,530,328,580"    onclick="couve17();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="335,529,395,578"     onclick="couve18();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="402,530,461,578"    onclick="couve19();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="468,528,529,575"     onclick="couve20();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="534,529,597,579"    onclick="couve21();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="599,529,664,578"    onclick="couve22();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="670,534,727,572"   onclick="couve23();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="736,529,797,578"    onclick="couve24();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="831,529,888,570"    onclick="couve25();"  shape="rect">
+            <area target=""  class="js-open-modal" title="x" href="#" coords="895,525,955,588"     onclick="couve26();"  shape="rect">
+          
+
+             <!-- Área de couve-flor e alface -->
+          
+             <area target=""  class="js-open-modal" title="x" href="#" coords="797,415,884,475"     onclick="funcaoabelha();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="893,400,950,454"     onclick="funcaobotasdejardinagem();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="872,363,908,393"     onclick="funcaochapeudejardinagem();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="888,408,862,392"     onclick="funcaochapeudejardinagem();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="800,486,826,577"     onclick="funcaoenxada();"  shape="rect">
+            
+             <area target=""  class="js-open-modal" title="x" href="#" coords="69,401,7,358"      onclick="couveflor1();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="167,364,241,407"     onclick="couveflor2();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="331,363,409,404"      onclick="couveflor3();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="495,360,578,405"     onclick="couveflor4();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="663,366,741,404"      onclick="couveflor5();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="4,412,72,458"      onclick="couveflor6();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="159,412,242,460"     onclick="couveflor7();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="326,413,406,458"     onclick="couveflor8();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="493,413,575,454"     onclick="couveflor9();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="674,413,740,450"      onclick="couveflor10();"  shape="rect">
+
+             <area target=""  class="js-open-modal" title="x" href="#" coords="80,362,156,407"      onclick="alface1();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="248,358,321,407"     onclick="alface2();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="416,360,494,407"     onclick="alface3();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="581,358,660,404"     onclick="alface4();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="79,412,155,456"      onclick="alface5();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="245,410,323,454"      onclick="alface6();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="416,412,489,459"       onclick="alface7();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="582,407,659,456"       onclick="alface8();"  shape="rect">
+           
+
+             <area target=""  class="js-open-modal" title="x" href="#" coords="7,246,81,352"       onclick="flor1();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="117,271,32"      onclick="flor2();"  shape="circle">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="192,262,30"      onclick="flor3();"  shape="circle">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="257,271,25"      onclick="flor4();"  shape="circle">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="323,286,27"      onclick="flor5();"  shape="circle">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="366,244,408,353"      onclick="flor6();"  shape="rect">
+
+             <area target=""  class="js-open-modal" title="x" href="#" coords="562,146,594,212"       onclick="legume1();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="608,148,643,205"       onclick="legume2();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="647,160,676,209"      onclick="legume3();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="690,145,730,213"     onclick="legume4();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="749,157,775,213"     onclick="legume5();"  shape="rect">
+
+
+             <area target=""  class="js-open-modal" title="?" href="#" coords="793,119,43"      onclick="arvoremaca1();"  shape="circle">
+             <area target=""  class="js-open-modal" title="?" href="#" coords="883,120,43"    onclick="arvoremaca2();"  shape="circle">
+             
+             
+             
+
+             <area target=""  class="js-open-modal" title="x" href="#" coords="674,255,21"       onclick="arvorezinha1();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="724,254,20"     onclick="arvorezinha2();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="777,254,17"     onclick="arvorezinha3();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="830,256,16"      onclick="arvorezinha4();"  shape="rect">
+
+             <area target=""  class="js-open-modal" title="x" href="#" coords="567,304,690,352"     onclick="funcaocaramujo();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="383,141,491,184"     onclick="funcaocaramujo();"  shape="rect">
+
+
+          
+             <area target=""  class="js-open-modal" title="x" href="#" coords="755,301,824,350"       onclick="regador1();"  shape="rect">
+             
+             <area target=""  class="js-open-modal" title="x" href="#" coords="806,182,871,228"      onclick="regador2();"  shape="rect">
+             
+             <area target=""  class="js-open-modal" title="x" href="#" coords="909,163,955,217"      onclick="ancinho();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="956,95,935,178"      onclick="ancinho();"  shape="poly">
+
+
+             <area target=""  class="js-open-modal" title="x" href="#" coords="510,32,557,184"      onclick="espantalho();"  shape="rect">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="454,67,621,85"     onclick="espantalho();"  shape="rect">
+             
+             
+             <area target=""  class="js-open-modal" title="x" href="#" coords="273,149,330,200"     onclick="funcaoabelha();"  shape="rect">
+             
+
+             <area target=""  class="js-open-modal" title="x" href="#" coords="483,223,34"     onclick="plantacarnivora();"  shape="circle">
+             <area target=""  class="js-open-modal" title="x" href="#" coords="469,288,527,334"     onclick="plantacarnivora();"  shape="rect">
+
+
+          </map>
+           
+          <object height="50px" width="100px" data="./sounds/bensound-creepy.mp3" autostart="true"  loop="3"  volume="50" width="180" height="40"></object>
+           
+     <div id="nat" class="modal">
+       
+    </div>
+
+  <script  src="./js-jogo/index.js"></script>
+  <script src="./js-jogo/animacoes1.js" type="text/javascript"></script>
+  
+
+    </body>
+        
+     </html>

@@ -1,0 +1,104 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+<title> Criando um novo 0bjeto </title>
+    <noscript><META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+        <noscript><META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+            <script src="//code.jquery.com/jquery-3.1.1.js"></script>
+            <script src="./js-jogo/jquery.rwdImageMaps.js"></script>
+            <script src="./js-jogo/jquery.rwdImageMaps.min.js"></script>
+            <script src="./js/essencial.js" type="text/javascript"></script>
+
+</head>
+<script src="jquery.min.js"></script>
+<script src="rangeslider.min.js"></script>
+<link rel="stylesheet" href="./css/estilo_cad_objeto.css">
+
+
+<body bgcolor="rgba(0,0,0,1,0)">
+
+
+        <div id="Cenario" >
+            
+            <object height="50px" width="100px" data="./sounds/RhapsodyNo.2inGMinorBrahms.mp3" autostart="true"  loop="3"  volume="50" width="180" height="40"></object>
+
+                <!-- <p align="center">Personagem</p> -->
+            <br>
+            
+            <div id="imagemcenario"></div>
+            
+  </div>
+
+
+
+
+<div id="cadastro">
+
+<p align="center"> <b>   Dados do Objeto </b> </p>
+
+<form align="center">
+      
+
+        <div id="areadetexto"> 
+
+                <label for="nomeobj">Qual é o nome desse objeto? </label>
+                <input type="text" id="nomeobj" onpaste="return false;"  size="45" >
+                <br>
+                </form>
+                <br>
+        <label for="serventiaobjeto"> Para que este objeto serve? <br> Liste o maior número possível de coisas <br> que podem ser feitas com ele: </label>
+        <!-- <form class="paper"> -->
+            <textarea title= "" class="autoExpand" onpaste="return false;" name="serventiaobjeto" id="serventiaobjeto" rows="2" data-min-rows="3"> </textarea>
+        <!-- </form> -->
+                <label for="funcaoobjeto"> Qual será a função desse objeto na sua história? </label>
+        <!-- <form class="paper"> -->
+            <textarea title="" class="autoExpand" onpaste="return false;" name="funcaoobj" id="funcaoobj" rows="2" data-min-rows="3"> </textarea>
+        <!-- </form> -->
+
+        <label for="materialobjeto"> De que materiais esse objeto é feito?  </label>
+        <!-- <form class="paper"> -->
+            <textarea class="autoExpand" title="" name="materialobjeto" id="materialobjeto" onpaste="return false;" rows="2" data-min-rows="3"> </textarea>
+        <!-- </form> -->
+
+        <label for="demiasinfo"> Esse objeto tem alguma história importante?  </label>
+        <!-- <form class="paper"> -->
+            <textarea title="Ele pertenceu a alguém importante?" class="autoExpand" onpaste="return false;" name="historiaobjeto" id="historiaobjeto" rows="2" data-min-rows="3"> </textarea>
+        <!-- </form> -->
+
+        <label for="outrasinfocenario"> Como esse objeto chegará até o seu personagem? </label>
+        <!-- <form class="paper"> -->
+            <textarea title="Um objeto pode ser herdado, encontrado, criado, comprado, presenteado... " class="autoExpand" onpaste="return false;"  name="comoobjchegaaoobjeto" id="comoobjchegaaoobjeto" rows="2" data-min-rows="3"> </textarea>
+        <!-- </form> -->
+
+        <label for="pqobjeto"> Por que você escolheu esse objeto? </label>
+        <!-- <form class="paper"> -->
+            <textarea title="" class="autoExpand" name="pqobjeto" onpaste="return false;" id="pqobjeto" rows="2" data-min-rows="3"> </textarea>
+        <!-- </form> -->
+
+
+        </div>
+
+            <!-- PAPEL MUITO LEGAL  -->
+            <!-- <div class="paper"> -->
+                <!-- <div class="paper-content"> -->
+                    <!-- <textarea autofocus>Utilize esse rascunho para descrever o seu personagem :)</textarea> -->
+                <!-- </div> -->
+            <!-- </div>    -->
+
+            <div id="divparabotoes" align="center" >
+                        <input type="image" src="./botoes/voltar.png" width=”0.5px” height=”0.5px” id="voltar" onClick="window.location.href='./morangos.html';"/>
+                        <input type="image" src="./botoes/criar.png" width=”0.5px” height=”0.5px” id="criar" onClick="criarobjeto()"/>
+                  
+                    </div> 
+        
+                                 
+  </div>
+
+</div>
+<script src="./js-jogo/cadastro_objeto.js"></script>
+</body>
+
+
+
+
+</html>

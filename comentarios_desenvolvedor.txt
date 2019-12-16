@@ -1,0 +1,14 @@
+tag usada no html para redirecionar o usuario que tente acessar o jogo sem ter o javascript ativado.
+   <noscript><META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+
+treixo de codigo aonde verificamos as credenciais do usuario, essas mesmas credenciais sao 
+guardadas no lado do servidor e sao checadas.
+
+var cod_pessoa = sessionStorage.getItem("cod_pessoa");
+var pessoa = sessionStorage.getItem("pessoa");
+
+if (!(cod_pessoa||cod_pessoa)){
+    alert("É necessário logar primeiro");
+    window.location.href = "./login.html";
+}
+

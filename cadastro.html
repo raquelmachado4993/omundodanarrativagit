@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+	<meta charset="UTF-8">
+	<title> Bem vindo ao mundo da narrativa :) </title>
+	<noscript>
+		<META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+	<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Free HTML5 Website Template by FreeHTML5.co" />
+	<meta name="keywords"
+		content="free html5, free template, free bootstrap, free website template, html5, css3, mobile first, responsive" />
+	<meta name="author" content="FreeHTML5.co" />
+
+	<!-- 
+	//////////////////////////////////////////////////////
+
+	FREE HTML5 TEMPLATE 
+	DESIGNED & DEVELOPED by FreeHTML5.co
+		
+	Website: 		http://freehtml5.co/
+	Email: 			info@freehtml5.co
+	Twitter: 		http://twitter.com/fh5co
+	Facebook: 		https://www.facebook.com/fh5co
+
+	//////////////////////////////////////////////////////
+	 -->
+
+	<!-- Facebook and Twitter integration -->
+	<!-- <meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" /> -->
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="./css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="./css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="./css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="./css/flexslider.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="./css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+	<noscript>
+		<META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+	<!-- fuuncoes de controle de paginas -->
+	<script src="./js/funcoes.js"></script>
+</head>
+
+<body>
+
+
+	<div id="fh5co-page">
+		<header id="fh5co-header" role="banner">
+			<div class="container">
+				<div class="header-inner">
+					<nav role="navigation">
+						<ul>
+							<li><a href="./index.html">Home</a></li>
+							<li><a href="./cadastro.html">Cadastre-se</a></li>
+							<li><a href="./sobre.html">Sobre</a></li>
+							<li><a href="./contatos.html">Contato</a></li>
+							<li><a href="./creditos.html">Créditos</a></li>
+							<li><a href="./ebook.pdf" target="_blank">ebook</a></li>
+							<li class="cta"><a href="./login.html">Login</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+
+		<aside id="fh5co-hero" class="js-fullheight">
+			<div class="flexslider js-fullheight">
+				<ul class="slides">
+					<li style="background-image: url(./images/slide1comdesenhos.png);">
+						<div class="centro">
+							<div class="formulario">
+								<form action="./php/cadastro.php" method="POST">
+									<label class="ali"> Nome completo </label> <input type="text" name="nome" size="50"
+										value="" /><br><br>
+									<label class="ali">Escolha um login </label> <input type="text" name="login"
+										id="login" value="" onblur="validalogin()" /> <br>
+									<div style="visibility: hidden;" id="vlogin">
+										<font color="red">login já esta em uso</font>
+									</div><br>
+									<label class="ali">Escolha uma senha </label> <input type="password" name="senha"
+										id="senha" value="" /><br> <br>
+									<label class="ali"> Confirmação de senha </label> <input type="password"
+										name="confirmar_senha" id="senha2" value="" onblur="verifica_senha()" /><br>
+									<div style="visibility: hidden;" id="csenha">
+										<font color="red">senha nao confere</font>
+									</div></br>
+									<br><br>
+									<input type="radio" name="tipo" value="aluno" onclick="showAluno()">Aluno</input>
+									<input type="radio" name="tipo" value="professor"
+										onclick="showProfessor()">Professor</input>
+									<input type="radio" name="tipo" value="outros"
+										onclick="showOutro()">Outros</input><br><br>
+
+									<div id="divOutros"></div>
+
+
+									<input type="button" name="voltar" value="Voltar">
+									<input type="hidden" name="custId">
+									<input type="hidden" name="custId">
+									<input type="submit" name="enviar" value="Enviar">
+								</form>
+
+							</div>
+						</div>
+					</li>
+			</div>
+	</div>
+	</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Stellar -->
+	<script src="js/jquery.stellar.min.js"></script>
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+</body>
+
+</html>

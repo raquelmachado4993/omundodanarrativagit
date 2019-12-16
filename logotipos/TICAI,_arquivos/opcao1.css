@@ -1,0 +1,115 @@
+#logo-ufsm{
+    background: url(http://w5.ufsm.br/wp-content/uploads/2018/05/brasoa-branco-ufsm-150dpi.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    height: 97px;
+}
+#main-header {
+    /*background: radial-gradient(ellipse at center,#3a72bc 1%,#2160bd 100%) !important;*/
+    background: #204C90;
+}
+
+#main-header #logo a {
+    color: rgb(255, 255, 255) !important;
+}
+
+#main-header {
+    color: white !important;
+}
+
+#main-header #social-icons a
+{
+    color:white !important;
+}
+
+#main-header #portal-siteactions a, #main-header #language a {
+    color: white !important;
+    
+}
+
+#main-header #accessibility a {
+    color: white !important;
+    
+}
+
+#main-header div.sobre
+{
+    background-color: #21376C;
+    /* border-bottom: 2px solid #0f4098; */
+}
+#main-header div.sobre a {
+    color: white !important;
+}
+
+
+ul.sub-menu li.menu-item-has-children > a {
+    background: none !important;
+}
+
+.recent-post-slider.design-3 .post-short-content:hover {
+    background: radial-gradient(ellipse at center,#3a72bc 1%,#2160bd 100%) !important
+}
+
+footer#main-footer {
+    background: #204c90 !important;
+}
+
+footer#main-footer .footer-ferramenta {
+    background: #21376C;
+    padding: 10px 0px !important;
+    border-top: 1px solid #CC8F00;
+}
+
+#main-section .hentry h5, #main-section .hentry h6{
+    border-top: 2px solid #204C90 !important;
+    color: #204C90 !important;
+}
+
+#main-header #accessibility a span {
+    background-color: #eaeaea;
+    color: #21376c;
+}
+
+.elementor-row>div{
+    padding-right: 5px !important;
+}
+
+.list-group-item.active,
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active{
+    background-color: #204C90;
+    color: white;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus{
+    color: white;
+    background-color: #204c90;
+}
+.btn-outline-secondary{
+    border: 1px solid black !important;
+}
+
+
+.btn-primary, .badge-primary, .page-item.active .page-link  {
+    color: #fff !important;
+    background-color: #204c90 !important;
+    border-color: #204c90 !important;
+}
+.border-primary,
+.list-group-item.active{
+    border-color: #204c90 !important;
+}
+.bg-primary{
+    color: #fff;
+    background-color: #204c90 !important;
+}
+.text-primary, .page-link{
+    color: #204c90 !important;
+}
+.btn-outline-primary {
+    color: #204c90;
+    border-color: #204c90;
+}

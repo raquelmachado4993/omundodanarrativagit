@@ -1,0 +1,155 @@
+@font-face {
+  font-family: HelvetiHand;
+  src: url('../fonts/HelvetiHand.ttf');
+}
+
+p {
+ font-family: HelvetiHand;
+}
+
+body {
+    background: rgb(0, 0, 0);
+    padding: 20px;
+  font-family: HelvetiHand;
+  }
+  
+  img {
+      margin: auto;
+    position: absolute;
+    align-self: center;
+    top: 0; left: 0; bottom: 0; right: 0;
+  
+    width: 90%;
+    height:90%;
+    }
+    .myImg {
+      /* width: 960px; */
+      /* height:720px; */
+      width: 80%;
+      height:80%;
+    }
+
+    .imagemfundo {
+      width: 90%;
+      height:75%;
+    }
+
+    .Imgpersonagem {
+      width: 90%;
+      height:90%;
+    }
+
+
+    .Imglagarta {
+      width: 960px;
+      height:720px;
+    }
+  
+    .Imgpersonagem {
+      width: 90%;
+      height:90%;
+    }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    font-family: HelvetiHand;
+    font-size:26px;
+    /* left: 700px; */
+      align-self: center;
+    display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+    /* -webkit-transform: translate(-50%, -50%); */
+            /* transform: translate(-50%, -50%); */
+    background: rgb(30%, 90%, 40%);
+    /* opacity: 0.2; */
+    width: 80%;
+    top: 80%; left: 10%; bottom: 5%; right: 0%;
+    height: 18%;
+    text-align: center;
+    box-sizing: border-box;
+    overflow: auto;
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+  }
+
+  
+  
+  .modal.visible {
+    display: block;
+  }      
+   @-webkit-keyframes slideIn {
+  from {bottom: 50px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: 50px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+  }
+#botoes {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    margin:0;
+    margin-top:200px;
+    align:'center';
+    clear: both;
+    }
+
+    .modal2 {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      background: rgba(0, 0, 0, 0.4);
+      /* opacity: 0.2; */
+      width: 300px;
+      height: 200px;
+      text-align: center;
+      box-sizing: border-box;
+      box-shadow: 0 0 20px rgba(145, 14, 14, 0.2);
+    }  
+
+    .modal2.visible {
+      display: block;
+    }
+
+.modal2__header {
+  color: white;
+  background: #333;
+  line-height: 50px;
+  text-align: center;
+  position: relative;
+  height: 50px;
+  box-sizing: border-box;
+}
+.modal2__header a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  display: block;
+  padding: 0 20px;
+  font-size: 16px;
+  background: #555;
+  height: 100%;
+}

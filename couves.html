@@ -1,0 +1,76 @@
+<html> 
+        <head>
+                <meta charset="UTF-8">
+                <title>Jogo o mundo da narrativa</title>
+                  <!-- esse treixo de codigo é necessario em todo o sistema pois o jogo funciona com javascript -->
+                  <noscript><META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+                    <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+                    <script src="./js-jogo/jquery.rwdImageMaps.js"></script>
+                    <script src="./js-jogo/jquery.rwdImageMaps.min.js"></script>
+                    <script src="./js/essencial.js" type="text/javascript"></script>
+                <!-- fim do treixo de codigo obrigatorio em todo o site -->  
+                  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">  
+                   <link rel="stylesheet" href="./css-jogo/style.css" >
+              
+                
+              </head>
+
+
+
+        
+<body> 
+
+<div id= "div_raquel">
+    
+    <img id="imagemfundo"  class="myImg" src="./fundos/fundocouves.png" usemap="#image-map" >
+     
+    <map name="image-map"> 
+                  
+        <area target="" id="Couve1" alt="Couve1" class="js-open-modal" title="Couve 1" href="#" coords="5,2,157,175" shape="rect" onclick="couve('calabouço');">
+        <area target="" id="Couve2" alt="Couve2"  class="js-open-modal"  title="Couve 2" href="#" coords="161,1,319,175" shape="rect" onclick="couve('casaassombrada');">        
+        <area target="" id="Couve3" alt="Couve3"  class="js-open-modal" title="Couve 3" href="#" coords="324,2,477,172" shape="rect" shape="rect" onclick="couve('cidade');"> 
+        <area target="" id="Couve4" alt="Couve4"  class="js-open-modal" title="Couve 4" href="#" coords="484,0,637,172" shape="rect" shape="rect" onclick="couve('deserto');"> 
+        <area target="" id="Couve5" alt="Couve5" class="js-open-modal" title="Couve 5" href="#" coords="644,3,798,175" shape="rect" onclick="couve('egito');"> 
+        <area target="" id="Couve6" alt="Couve6" class="js-open-modal" title="Couve 6" href="#" coords="806,5,957,173" shape="rect" onclick="couve('escola');"> 
+        <area target="" id="Couve7" alt="Couve7" class="js-open-modal" title="Couve 7" href="#" coords="5,180,160,346" shape="rect" onclick="couve('casanaarvore');">
+        <area target="" id="Couve8" alt="Couve8" class="js-open-modal" title="Couve 8" href="#" coords="164,178,318,345" shape="rect" onclick="couve('espacosideral');"> 
+        <area target="" id="Couve9" alt="Couve9"  class="js-open-modal" title="Couve 9" href="#" coords="329,180,476,345" shape="rect" onclick="couve('estadio');"> 
+        <area target="" id="Couve10" alt="Couve10"   class="js-open-modal" title="Couve 10" href="#" coords="483,178,637,347" shape="rect" onclick="couve('seupropriocenario');"> 
+        <area target="" id="Couve11" alt="Couve11"  class="js-open-modal" title="Couve 11" href="#" coords="644,179,797,349" shape="rect" onclick="couve('floresta');"> 
+        <area target="" id="Couve12" alt="Couve12"  class="js-open-modal" title="Couve 12" href="#" coords="802,180,957,346" shape="rect" onclick="couve('fundodomar');"> 
+        <area target="" id="Couve13" alt="Couve13"  class="js-open-modal" title="Couve 13" href="#" coords="3,355,159,521" shape="rect" onclick="couve('iglu');"> 
+        <area target="" id="Couve14" alt="Couve14" class="js-open-modal" title="Couve 14" href="#" coords="163,353,317,524" shape="rect" onclick="couve('japao');"> 
+        <area target="" id="Couve15" alt="Couve15" class="js-open-modal" title="Couve 15" href="#" coords="323,354,476,523" shape="rect" onclick="couve('laboratorio');"> 
+        <area target="" id="Couve16" alt="Couve16" class="js-open-modal" title="Couve 16" href="#" coords="484,355,637,520" shape="rect" onclick="couve('montanhas');"> 
+        <area target="" id="Couve17" alt="Couve17" class="js-open-modal" title="Couve 17" href="#" coords="643,355,797,523" shape="rect" onclick="couve('parquedediversoes');"> 
+        <area target="" id="Couve18" alt="Couve18" class="js-open-modal" title="Couve 18" href="#" coords="804,355,955,523" shape="rect" onclick="couve('portas');"> 
+        <area target="" id="Couve19" alt="Couve19" class="js-open-modal" title="Couve 19" href="#" coords="7,532,157,719" shape="rect" onclick="couve('praia');"> 
+        <area target="" id="Couve20" alt="Couve20" class="js-open-modal" title="Couve 20" href="#" coords="164,528,316,717" shape="rect" onclick="couve('safari');"> 
+        <area target="" id="Couve21" alt="Couve21" class="js-open-modal" title="Couve 21" href="#" coords="326,531,476,719" shape="rect" onclick="couve('saladecontroleespacial');"> 
+        <area target="" id="Couve22" alt="Couve22" class="js-open-modal" title="Couve 22" href="#" coords="482,529,636,719" shape="rect" onclick="couve('caverna');">
+        <area target="" id="Couve23" alt="Couve23" class="js-open-modal" title="Couve 23" href="#" coords="644,529,797,717" shape="rect" onclick="couve('aeroport');">
+        <area target="" id="Couve24" alt="Couve24" class="js-open-modal" title="Couve 24" href="#" coords="802,527,956,716" shape="rect" onclick="couve('festa');">
+
+    </map>
+
+   
+
+</div>
+        
+
+
+
+
+
+     <div id="nat" class="modal">
+       
+    </div>
+
+  <script  src="./js-jogo/index.js"></script>
+  <script  src="./js-jogo/function.js"></script>
+  <script src="./js-jogo/animacoes1.js" type="text/javascript"></script>
+
+    </body>
+        
+    <object height="50px" width="100px" data="./sounds/bensound-smile.mp3" autostart="true"  loop="3"  volume="50" width="180" height="40" />
+    </html>

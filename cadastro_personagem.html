@@ -1,0 +1,116 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+<title> Criando um novo personagem </title>
+
+        <noscript><META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+            <script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+            <script src="./js-jogo/jquery.rwdImageMaps.js"></script>
+            <script src="./js-jogo/jquery.rwdImageMaps.min.js"></script>
+
+            <script src="./js/essencial.js" type="text/javascript"></script>
+</head>
+<!-- <script src="./js/jquery.min.js"></script> -->
+<link rel="stylesheet" href="./css/estilo_personagem.css">
+
+
+<div  > 
+<object id="musica" data="./sounds/BachGiguefrom3rdCelloSuite.mp3" autostart="true"  loop="3"  volume="50" ></object>
+</div>
+<body bgcolor="rgba(0,0,0,1,0)">
+
+
+    
+<div id="barrinhas"  >
+
+    <div class="slider" >
+        <label> Inteligência </label> 
+        <input type = "range" id="inteligencia" min="0" max="100" onchange="rangevalue.value=value"/>
+        <output id="rangevalue">50</output>
+    </div>
+
+    <div class="slider">
+        <label> Força </label> 
+        <input type = "range" id="forca" min="0" max="100" onchange="rangevalue2.value=value"/>
+        <output id="rangevalue2">50</output>
+    </div>
+    <div class="slider">
+        <label> Criatividade </label> 
+        <input type = "range" id="criatividade" min="0" max="100" onchange="rangevalue3.value=value"/>
+        <output id="rangevalue3">50</output>
+    </div>
+    <div class="slider">
+        <label> Coragem </label> 
+        <input type = "range" id="Coragem" min="0" max="100" onchange="rangevalue4.value=value"/>
+        <output id="rangevalue4">50</output>
+    </div>
+</div>    
+
+<div id="imagempersonagem"></div></p>
+ 
+
+
+<div id="cadastro"><p align="center"> <b>Dados do personagem </b> </p></div>
+    <!--  fim da div cadastro -->
+    
+    <div id="formulario">
+        <form align="center">
+            <label for="nomepers">Nome do personagem</label>
+            <input type="text" id="nomedopersonagem" onpaste="return false;"   size="45" >
+            <br>
+    
+            <label for="idadepers">Idade do personagem</label>
+            <input type="text" id="idadedopersonagem" onpaste="return false;"  size="5" >
+          <br>
+    
+            <label for="ondemorapers">Onde mora?</label>
+            <input type="text" onpaste="return false;"  id="ondemora" " size="30" >
+            <br>   
+            
+            <label for="amigosper">Quem são seus melhores amigos?</label>
+            <input type="text" onpaste="return false;"  id="melhoramigo"  size="30" >
+            <br>
+           
+            <label for="inimigosper">Quem são seus inimigos?</label>
+            <input type="text" onpaste="return false;"  id="inimigospersonagem" name="inimigospersonagem" size="30" >
+            <br> 
+            <br>
+          </form>
+        </div> 
+        <!--  fim do div formulario -->
+            <div id="areadetexto"> 
+            <label for="caracteristicasfisicas"> Quais são as características físicas do personagem? </label>
+            <!-- <form class="paper"> -->
+                <textarea class="autoExpand" onpaste="return false;"   name="caracteristicasfisicas" id="caracteristicasfisicas" > </textarea>
+            <!-- </form> -->
+                    <label for="caracteristicaspsicologicas"> Quais são as características psicológicas do personagem? </label>
+            <!-- <form class="paper"> -->
+                <textarea class="autoExpand" onpaste="return false;" name="caracteristicaspsicologicas" id="caracteristicaspsicologicas" > </textarea>
+            <!-- </form> -->
+    
+            <label for="caracteristicasmisticas">O seu personagem tem poderes?</label> Descreva suas características místicas. 
+            <!-- <form class="paper"> -->
+                <textarea class="autoExpand" onpaste="return false;" name="caracteristicasmisticas" id="caracteristicasmisticas" > </textarea>
+            <!-- </form> -->
+    
+            <label for="demiasinfo"> Dê mais informações sobre o seu personagem:  </label>
+            <!-- <form class="paper"> -->
+                <textarea class="autoExpand" onpaste="return false;" name="demiasinfo" id="demiasinfo" > </textarea>
+            <!-- </form> -->
+            <br><br>                  
+        </div>
+        <!--  fim da div  areadetexto  -->
+    
+        <div id="botoes" align="center" >
+            <input type="image" src="./botoes/voltar.png"  id="voltar" href="./escolha_personagem.html"/>
+               <input type="image" src="./botoes/criar.png"  id="criar" onClick="criarpersonagem();"/>
+         
+           </div> 
+           <!--  fim da div botoes -->
+         
+
+
+<script src="./js-jogo/cadastro_personagem.js" type="text/javascript"></script>
+
+</body>
+</html>

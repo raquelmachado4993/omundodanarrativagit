@@ -1,0 +1,121 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+<title> Criando um novo personagem </title>
+    <noscript><META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+        <noscript><META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+            <script src="//code.jquery.com/jquery-3.1.1.js"></script>
+            <script src="./js-jogo/jquery.rwdImageMaps.js"></script>
+            <script src="./js-jogo/jquery.rwdImageMaps.min.js"></script>
+            <script src="./js/essencial.js" type="text/javascript"></script>
+  
+</head>
+<script src="rangeslider.min.js"></script>
+<!-- <script src="./js/javascript_personagem.jss"></script>-->
+<link rel="stylesheet" href="./css/estilo_cad_cenario.css">
+
+
+<body bgcolor="rgba(0,0,0,1,0)">
+
+<div id="Cenario" >
+    <object height="50px" width="100px" data="./sounds/DoubleViolinConcerto1stMovementJ.S. Bach.mp3" autostart="true"  loop="3"  volume="50" width="180" height="40"></object>
+
+
+    <!-- <p align="center">Personagem</p> -->
+<br>
+
+<div id="imagemcenario">
+        <form id="formulario" method="post" enctype="multipart/form-data" action="upload.php">
+            Foto
+            <input type="file" id="imagem" name="imagem" />
+            </form>
+            <div id="visualizar"></div>  
+</div>
+
+
+<!-- <div id="botaodeimagem">
+  
+    <form action="#" align="center" method="post" enctype="multipart/form-data">
+    <input type="file" name="imageURL[]" accept="image/png, image/jpeg"  id="imageURL" /> 
+    <input type="image" src="./botoes/enviar.png" width=”0.5px” height=”0.5px” id="enviar" onClick="enviarimagem()" />
+    </form>
+    
+  </div> -->
+
+
+                    
+</div>
+</div>
+
+<div id="cadastro">
+
+<p align="center"> <b>   Dados do Cenário </b> </p>
+<div id="formulario">
+    <form align="center">
+        <label for="nomepers">Que cenário é esse? </label>
+        <input type="text" title="Explique o que você viu na imagem que você escolheu" onpaste="return false;" id="explica_cenario"  size="40" >
+        <br>
+
+        <label for="idadepers">Que nome terá o seu cenário? </label>
+        <input type="text" id="nome_cenario" onpaste="return false;" size="32" >
+      <br>
+
+      </form>
+
+        <div id="areadetexto"> 
+        <label for="localizacao_cenario"> Onde esse cenário está localizado? </label>
+        <!-- <form class="paper"> -->
+            <textarea title= "Galáxia, planeta, país, cidade, bairro, rua..." onpaste="return false;"class="autoExpand" name="localizacaodocenario" id="localizacaodocenario" rows="2" data-min-rows="3"> </textarea>
+        <!-- </form> -->
+                <label for="caracteristicasfisicascenario"> Quais são as características físicas desse lugar? </label>
+        <!-- <form class="paper"> -->
+            <textarea title="Quente, frio, deserto..." onpaste="return false;"class="autoExpand" name="caracteristicasfisicascenario" id="caracteristicasfisicascenario" rows="2" data-min-rows="3"> </textarea>
+        <!-- </form> -->
+
+        <label for="caracteristicasmisticascenario"> Quais são as características místicas desse lugar? </label>
+        <!-- <form class="paper"> -->
+            <textarea class="autoExpand" onpaste="return false;"title="É assombrado? É sagrado? É mágico?" name="caracteristicasmisticascenario" id="caracteristicasmisticascenario" rows="2" data-min-rows="3"> </textarea>
+        <!-- </form> -->
+
+        <label for="historia_lugar"> Qual é a história desse lugar?  </label>
+        <!-- <form class="paper"> -->
+            <textarea title="Foi fundado por quem? É um lugar antigo? Quem cuida desse lugar?" onpaste="return false;" class="autoExpand" name="historiacenario" id="historiacenario" rows="2" data-min-rows="3"> </textarea>
+        <!-- </form> -->
+
+        <label for="outrasinfocenario"> Descreva o cenário da sua história </label>
+        <!-- <form class="paper"> -->
+            <textarea title="Escreva o máximo de informações possíveis sobre o cenário da sua história" onpaste="return false;" class="autoExpand" name="outrasinfocenario" id="outrasinfocenario" rows="2" data-min-rows="3"> </textarea>
+        <!-- </form> -->
+
+        <label for="motivoescolhacenario"> Por que você escolheu esse cenário? </label>
+        <!-- <form class="paper"> -->
+            <textarea title="" class="autoExpand" onpaste="return false;"name="motivoescolhacenario" id="motivoescolhacenario" rows="2" data-min-rows="3"> </textarea>
+        <!-- </form> -->
+
+
+        </div>
+
+            <!-- PAPEL MUITO LEGAL  -->
+            <!-- <div class="paper"> -->
+                <!-- <div class="paper-content"> -->
+                    <!-- <textarea autofocus>Utilize esse rascunho para descrever o seu personagem :)</textarea> -->
+                <!-- </div> -->
+            <!-- </div>    -->
+
+            <div id="divparabotoes" align="center" >
+                        <input type="image" src="./botoes/voltar.png" width=”0.5px” height=”0.5px” id="voltar" onClick="window.location.href='./fasecenarios.html';"/>
+                        <input type="image" src="./botoes/criar.png" width=”0.5px” height=”0.5px” id="criar" onClick="criarcenario()"/>
+                  
+                    </div> 
+        
+                                 
+  </div>
+
+</div>
+<script src="./js-jogo/cadastro_cenario.js"></script>
+</body>
+
+
+
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>O mundo da narrativa</title>
+  <noscript><META HTTP-EQUIV="Refresh" CONTENT="0;URL=./sobre.html"></noscript>
+    <script src="//code.jquery.com/jquery-3.1.1.js"></script>
+    <script src="./js-jogo/jquery.rwdImageMaps.js"></script>
+    <script src="./js-jogo/jquery.rwdImageMaps.min.js"></script>
+    <script src="./js/essencial.js" type="text/javascript"></script>
+<!-- fim do treixo de codigo obrigatorio em todo o site -->  
+  
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Nunito'>
+<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.3.1/css/all.css'>
+
+      <link rel="stylesheet" href="css-jogo/estilo_paginapesquisa.css">
+      <script src="./js-jogo/animacoes_transporte.js" type="text/javascript"></script>
+  
+</head>
+
+<script>
+function redireciona(){
+    sessionStorage.setItem('buscaaluno',document.getElementById("texto").value);
+    // window.location.href = "./fasetransporte.html";
+     window.location.href = "./finaltransporte.html";
+}
+
+</script>
+
+
+<body>
+
+  <div id="cover">
+  <form method="POST" action="">
+    <div class="tb">
+      <div class="td"><input type="text" id="texto" placeholder="pesquisar" required></div>
+      <div class="td" id="s-cover">
+        <button type="button" onclick="redireciona();" >
+          <div id="s-circle"></div>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </form>
+</div>
+
+ 
+  
+
+</body>
+
+</html>
